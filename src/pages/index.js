@@ -99,7 +99,7 @@ export default function Home() {
         <div style={styles.container}>
             
             <h2 style={{...styles.header, marginTop: '30px'}}>
-                {isEditing ? `✏️ EDITING USER ID: ${form.id}` : '➕ Add New User'}
+                {isEditing ? `✏️ EDITING USER ID: ${form.id}` : 'Add New User'}
             </h2>
             
             <form onSubmit={handleSubmit} style={styles.form}>
@@ -121,7 +121,7 @@ export default function Home() {
             <div style={{ height: '20px' }}></div>
 
             <h2 style={styles.header}>
-                👥 User List ({users.length})
+                User List ({users.length})
             </h2>
 
             <table style={styles.table}>
