@@ -1,7 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
-  reactStrictMode: true,
+  turbopack: {}, 
+  
+  compiler: {
+    styledComponents: true,
+  },
+  
+  webpack: (config, { isServer }) => {
+    console.log('--- FINAL LAUNCH: Using Webpack Compiler ---');
+    return config;
+  },
 };
 
 export default nextConfig;
